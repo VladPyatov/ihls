@@ -32,3 +32,12 @@ bash scripts/reproduce_test/indoor_ds_new_irls.sh
 # test IHLS solver without weight prediction network (outdoor)
 bash scripts/reproduce_test/outdoor_ds_irls_solver.sh
 ```
+
+## Acknowledgements
+Our code is based on the following awesome repositories:
+
+- [LIRLS](https://gitee.com/ys-koshelev/models/tree/lirls/research/cv/LIRLS)
+- [DFE](https://github.com/isl-org/DFE)
+- [LoFTR](https://github.com/zju3dv/LoFTR)
+
+We thank the authors for releasing their code!
