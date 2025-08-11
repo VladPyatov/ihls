@@ -1,2 +1,30 @@
-# ihls
-Code for "Robust Two-View Geometry Estimation with Implicit Differentiation", IROS 2024
+#  Robust Two-View Geometry Estimation with Implicit Differentiation
+## [Paper](https://arxiv.org/abs/2410.17983)
+> [Vladislav Pyatov](https://scholar.google.com/citations?user=xwiCaecAAAAJ&hl=en), [Iaroslav Koshelev](https://openreview.net/profile?id=%7EIaroslav_Sergeevich_Koshelev1), [Stamatis Lefkimmiatis](https://scholar.google.com/citations?user=3Bawtm4AAAAJ&hl=en)  
+> IROS 2024
+![Framework](docs/images/framework_modified.jpg)
+# Installation
+```bash
+conda env create --file environment.yaml
+conda activate ihls
+pip install -r requirements.txt
+```
+
+# Run IHLS
+## Demo
+You can try the IHLS solver in `demo.ipynb`
+
+## Reproduce train
+See [Training IHLS](./docs/TRAINING_IHLS.md) for details.
+## Reproduce test
+To reproduce the results from our paper, setup the testing subsets of ScanNet and MegaDepth according to [LoFTR](https://github.com/zju3dv/LoFTR?tab=readme-ov-file#reproduce-the-testing-results-with-pytorch-lightning). Then download [weights](https://drive.google.com/drive/folders/1JI2fLXG3vfUX9Wi2ijgQdu_wEE6F7DzL?usp=sharing) and run
+```bash
+mkdir weights
+mv /path/to/weights.ckpt weights/
+# test IHLS solver with weight prediction network (outdoor)
+bash scripts/reproduce_test/outdoor_ds_irls.sh
+# test IHLS solver with weight prediction network (indoor)
+bash scripts/reproduce_test/indoor_ds_new_irls.sh
+# test IHLS solver without weight prediction network (outdoor)
+bash scripts/reproduce_test/outdoor_ds_irls_solver.sh
+```
