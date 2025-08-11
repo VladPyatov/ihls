@@ -1,4 +1,8 @@
 #  Robust Two-View Geometry Estimation with Implicit Differentiation
+> TL;DR  
+> 1. Classic IHLS solver outperforms MAGSAC++ on the Fundamental Matrix Estimation Task;
+> 2. Learning-based IHLS+WPN outperforms other approaches on the Essential Matrix Estimation Task;
+> 3. No RANSAC-like hypothesis sampling/evaluation/filtering is required during training.
 ## [Paper](https://arxiv.org/abs/2410.17983)
 > [Vladislav Pyatov](https://scholar.google.com/citations?user=xwiCaecAAAAJ&hl=en), [Iaroslav Koshelev](https://openreview.net/profile?id=%7EIaroslav_Sergeevich_Koshelev1), [Stamatis Lefkimmiatis](https://scholar.google.com/citations?user=3Bawtm4AAAAJ&hl=en)  
 > IROS 2024
