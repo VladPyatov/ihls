@@ -2,7 +2,7 @@
 # Traininig IHLS
 
 ## Dataset setup
-Same as in LoFTR Training.
+Same as in [LoFTR Training](./LoFTR_TRAINING.md).
 
 
 ## Training

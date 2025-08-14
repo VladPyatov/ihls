@@ -19,7 +19,7 @@ pip install -r requirements.txt
 You can try the IHLS solver in `demo.ipynb`
 
 ## Reproduce train
-See [Training IHLS](./docs/TRAINING_IHLS.md) for details.
+See [Training IHLS](./docs/IHLS_TRAINING.md) for details.
 ## Reproduce test
 To reproduce the results from our paper, setup the testing subsets of ScanNet and MegaDepth according to [LoFTR](https://github.com/zju3dv/LoFTR?tab=readme-ov-file#reproduce-the-testing-results-with-pytorch-lightning). Then download [weights](https://drive.google.com/drive/folders/1JI2fLXG3vfUX9Wi2ijgQdu_wEE6F7DzL?usp=sharing) and run
 ```bash
